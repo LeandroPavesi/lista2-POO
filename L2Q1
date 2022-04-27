@@ -1,0 +1,60 @@
+'''Questão 1. Analise cada um dos trechos de código a seguir e justifique, quando
+necessário, quais erros eles possuem.
+
+a) dia, temperatura = ('Monday', 87, 65)
+R: está errado, pois ele está tentando colocar duas varíaveis ao mesmo
+tempo, tem que ser separado
+ex: dia = 'monday'
+
+b) numeros = [1, 2, 3, 4, 5]
+print(numeros[10])
+R: está errado, quando ele faz numero[10], ele está tentando acessar
+um numero fora da lista
+
+c) nome = 'amanda'
+nome[0] = 'A'
+R: está errado, pois nome é uma string, e ele não aceita ser separado
+letra por letra dessa forma
+
+d) numeros = [1, 2, 3, 4, 5]
+numeros[3.4] = 20
+R: está errado, pois não tem como multiplicar elementos de uma lista 
+dentro dela.
+
+e) tupla_alunos = ('Amanda', 'Blue', [98, 75, 87])
+tupla_alunos[0] = 'Ariana'
+R: está errado, nas tuplas não é possível adicionar, ou alterar 
+elementos dentro dela, ela é imutável 
+
+f) ('Segunda', 87, 65) + 'Terça'
+R: está errado, só é possível somar tuplas que não forem strings
+
+g) 'A' += ('B', 'C')
+R: está errado, pois 'A' não pode ser considerado uma variável, por que
+é um elemento
+
+h) x = 7
+del x
+print(x)
+R: A função del vai deletar o elemento em x, então ele não irá imprimir
+nada
+
+i) numeros = [1, 2, 3, 4, 5]
+print(numeros.index(10))
+R: Foi pedido que ele imprimisse o valor 10, porém o 10 não está na lista
+então ele n imprime
+
+j) numeros = [1, 2, 3, 4, 5]
+numeros.extend(6, 7, 8)
+R: está errado, pois a função extend só pode adicionar um elemento por vez
+
+k) numeros = [1, 2, 3, 4, 5]
+numeros.remove(10)
+R:ele da errado, pois está pedindo para remover o valor 10, porém 10 
+não está na lista
+
+l) valores = []
+valores.pop()
+R: a função pop retira o ultimo elemento da lista, porém como a lista
+está vazia, ele não tem como retirar nada
+'''
