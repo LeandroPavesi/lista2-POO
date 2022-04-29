@@ -1,9 +1,9 @@
-m = []
 
-for linhas in range(2): #quantidade de linhas
-        linha = []
-        for colunas in range(3): #quanti de colunas
-                linha.append(0)
-        m.append(linha)
+chave = input('Digite o nome da pessoa que deseja adicionar: ')
+conteudo = input('Digite o numero da pessoa que vc adicinou: ')
 
-print(m)
+Listatelefonica = {}
+
+Listatelefonica[chave] = conteudo
+
+print(Listatelefonica['joao'])
