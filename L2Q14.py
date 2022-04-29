@@ -1,7 +1,9 @@
-from L2Q142 import incluir_novo_nome, incluir_telefone
+from typing import List
+from L2Q142 import excluir_telefone, incluir_novo_nome, incluir_telefone
 
 
 Listatelefonica = {}
+
 
 while True:
 
@@ -27,7 +29,13 @@ while True:
 
             print(Listatelefonica)#só de teste, ta funcionando
     elif opcao == '3':
-         pass
+
+         nova = {v: k for k, v in Listatelefonica.items()}
+
+         Listatelefonica = excluir_telefone(nova)
+
+         print(Listatelefonica)
+         
     elif opcao == '4':
          pass
     elif opcao == '5':

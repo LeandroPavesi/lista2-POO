@@ -14,15 +14,29 @@ def incluir_telefone(listatelefonica):
     chave = input('Digite o nome da pessoa que deseja adicionar: ')
     conteudo = input('Digite o numero da pessoa que vc adicinou: ')
 
-    listatelefonica.update({f'{chave} :' '{conteudo}'})
+    listatelefonica.update({f'{chave} :', conteudo})
+    #falta conseguir adicionar mais um conteudo numa mesma chave
     return
 '''– essa função acrescenta um telefone em um nome existente na
 agenda. Caso o nome não exista na agenda, você deve perguntar se a pessoa
 deseja incluí-lo. Caso a resposta seja afirmativa, use a função anterior para incluir
 o novo nome.'''
 
-def excluir_telefone(): 
+def excluir_telefone(listatelefonica): 
+
+    remover = input('Digite o numero que deseja excluir')
+
+
+    print(listatelefonica)
+
+    tamamanho = len(listatelefonica)
+
+    print(tamamanho)
+
     
+    del listatelefonica[remover]
+
+    return listatelefonica
     
     '''– essa função exclui um telefone de uma pessoa que já está na
 agenda. Se a pessoa tiver apenas um telefone, ela deve ser excluída da agenda.'''

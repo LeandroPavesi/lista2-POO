@@ -1,9 +1,8 @@
 
-chave = input('Digite o nome da pessoa que deseja adicionar: ')
-conteudo = input('Digite o numero da pessoa que vc adicinou: ')
 
-Listatelefonica = {}
 
-Listatelefonica[chave] = conteudo
+Listatelefonica = {'Leandro': '279888186961'}
 
-print(Listatelefonica['joao'])
+nova = {v: k for k, v in Listatelefonica.items()}
+
+print(nova)
